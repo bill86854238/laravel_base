@@ -13,7 +13,8 @@
 
 Route::get('/', 'HomeController@index');
 Route::post('/postData', 'HomeController@postData');
-Route::get('/getJson', 'HomeController@getUserJson');
+Route::get('/getUserJson', 'HomeController@getUserJson');
+Route::get('/getUserJson/{id}', 'HomeController@getUserJsonById');
 
 
 
