@@ -57,4 +57,14 @@ class HomeController extends Controller
         }
         return json_encode($arr);
     }
+
+    public function getUserJsonByIdV2 (Request $request){
+        $id = $request->input('id');
+        $user = User::where('id',$id)->get();
+        $arr =array();
+        foreach ($user as $k => $v){
+            $arr[$v['id']]= $v['name'];
+        }
+        return json_encode($arr);
+    }
 }

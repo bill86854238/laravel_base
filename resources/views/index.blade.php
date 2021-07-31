@@ -43,7 +43,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">{{$json}}</a>
+                    <a href="https://laravel.com/docs">{{$year}}</a>
                 </div>
             </div>
         </div>

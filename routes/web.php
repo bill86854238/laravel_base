@@ -15,6 +15,7 @@ Route::get('/', 'HomeController@index');
 Route::post('/postData', 'HomeController@postData');
 Route::get('/getUserJson', 'HomeController@getUserJson');
 Route::get('/getUserJson/{id}', 'HomeController@getUserJsonById');
+Route::get('/getUserJsonV2', 'HomeController@getUserJsonByIdV2');
 
 
 
