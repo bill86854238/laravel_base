@@ -4,10 +4,13 @@ namespace App\Http\Controllers;
 
 use App\User;
 use Illuminate\Http\Request;
+use OpenApi\Annotations;
 
 class HomeController extends Controller
 {
-    //
+    /**
+     * @OA\Info(title="My First API", version="0.1")
+     */
 
     public function index(){
         $user = User::get();
@@ -39,6 +42,15 @@ class HomeController extends Controller
         $data['json'] = json_encode($arr);
         return view('index',$data);
     }
+
+
+
+    /**
+     * @OA\Get(
+     *     path="/api/getUserJson",
+     *     @OA\Response(response="200", description="An example resource")
+     * )
+     */
 
     public function getUserJson (){
         $user = User::get();
