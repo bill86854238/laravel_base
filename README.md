@@ -1,4 +1,4 @@
-# Laravel Base
+# Laravel 6
 
 ## Eloquent ORM(SQL)
 SQL Select
