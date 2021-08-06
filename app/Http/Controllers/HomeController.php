@@ -43,7 +43,9 @@ class HomeController extends Controller
         return view('index',$data);
     }
 
-
+    /**
+     * @OA\Info(title="My First API", version="0.1")
+     */
 
     /**
      * @OA\Get(
