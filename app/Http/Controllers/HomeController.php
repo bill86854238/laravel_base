@@ -10,6 +10,7 @@ class HomeController extends Controller
     //
 
     public function index(){
+
         $user = User::get();
 //        $user = User::where('id',1)->get();
 
@@ -66,5 +67,14 @@ class HomeController extends Controller
             $arr[$v['id']]= $v['name'];
         }
         return json_encode($arr);
+    }
+
+    public function widgets()
+    {
+        return [
+            BigNumber::create('post-count', 'Number of Posts')
+                ->metric(CountMetric::create('count', 'Count'))
+                ->width('w-1/2')
+        ];
     }
 }

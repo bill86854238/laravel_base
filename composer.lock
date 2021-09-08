@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "621b742000b2d0821b52962738360111",
+    "content-hash": "a93aab8b756fe7495ffc206422231316",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -370,6 +370,58 @@
                 "source": "https://github.com/fideloper/TrustedProxy/tree/4.4.1"
             },
             "time": "2020-10-22T13:48:01+00:00"
+        },
+        {
+            "name": "laravel-bi/laravel-bi",
+            "version": "v0.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-bi/laravel-bi.git",
+                "reference": "58a419b85a8c1944c485ff2ea6b0e46785de88ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-bi/laravel-bi/zipball/58a419b85a8c1944c485ff2ea6b0e46785de88ac",
+                "reference": "58a419b85a8c1944c485ff2ea6b0e46785de88ac",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.7.15 | 5.8.* | ^6.0 | ^7.0",
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.8",
+                "phpunit/phpunit": "^8.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelBi\\LaravelBi\\BiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelBi\\LaravelBi\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alberto Bottarini",
+                    "email": "alberto.bottarini@gmail.com"
+                }
+            ],
+            "description": "A beautiful and fully-featured Business Intelligence dashboard manager for Laravel",
+            "support": {
+                "issues": "https://github.com/laravel-bi/laravel-bi/issues",
+                "source": "https://github.com/laravel-bi/laravel-bi/tree/v0.0.5"
+            },
+            "time": "2020-07-27T16:25:32+00:00"
         },
         {
             "name": "laravel/framework",

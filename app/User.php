@@ -37,4 +37,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function setNameAttribute($value) // Mutator 存進資料庫前作用
+    {
+        $this->attributes['name'] = encrypt($value);
+    }
+
+    public function getNameAttribute($value) // Accessor 從資料庫取出後作用
+    {
+        return decrypt($value);
+    }
 }
