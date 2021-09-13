@@ -69,21 +69,6 @@ class HomeController extends Controller
     }
 
 
-
-    public function getUserJsonByIdAjax (Request $request){
-        $id = $request->input('id');
-        $user = User::where('id',$id)->get();
-        $arr =array();
-        foreach ($user as $k => $v){
-            $arr[$v['id']]= $v['name'];
-        }
-
-        $j = json_encode(array('data'=>$arr));
-        echo($j);
-        dd();
-        return $j;
-    }
-
     public function bootstrapTable(){
 
         $data =array();
